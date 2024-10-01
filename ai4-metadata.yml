@@ -1,0 +1,43 @@
+metadata_version: 2.0.0
+title: Thunderstorm nowcast (MicroStep-MIS)
+summary: Thunderstorm nowcast based on radar data (for agrometeorology)
+description: |-
+  ai4eosc_thunder_nowcast_ml is an application using the DEEPaaS API.
+  Write additional information for your users (how to predict, how to retrain, dataset description, training description, etc).  
+
+  **Training the deep learning model(s)**
+  abc1
+  
+  **Data**
+  abc2
+  
+  **Inference**
+  abc3
+  
+  **References**
+  abc4
+  
+dates:
+  created: '2023-07-01'
+  updated: '2024-10-01'
+links:
+  source_code: https://dashboard.cloud.ai4eosc.eu/marketplace/modules/thunderstorm-nowcast-microstep
+  docker_image: ai4oshub/thunderstorm-nowcast-microstep
+  weights: https://github.com/MicroStep-MIS/thunderstorm-nowcast-microstep/tree/main/data/raw/model.h5
+  # ai4_template: ai4-template/1.9.9
+  # dataset: https://zenodo.org/records/4767772
+tags:
+  - deep learning
+  - convective rainfall warning
+tasks:
+  - Time Series
+  - Classification
+  - Other
+categories:
+  - AI4 trainable
+  - AI4 pre trained
+  - AI4 inference
+libraries:
+  - Keras
+data-type:
+  - Tabular
