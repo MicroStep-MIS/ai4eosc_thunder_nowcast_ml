@@ -24,7 +24,7 @@ links:
   source_code: https://dashboard.cloud.ai4eosc.eu/marketplace/modules/thunderstorm-nowcast-microstep
   docker_image: ai4oshub/thunderstorm-nowcast-microstep
   weights: https://github.com/MicroStep-MIS/thunderstorm-nowcast-microstep/tree/main/data/raw/model.h5
-  # ai4_template: ai4-template/1.9.9
+  ai4_template: ai4-template/1.9.9
   # dataset: https://zenodo.org/records/4767772
 tags:
   - deep learning
