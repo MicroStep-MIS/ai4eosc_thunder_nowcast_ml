@@ -986,14 +986,24 @@ def train(**kwargs):
             mlflow.log_param("Forecast time", dtm_tr["forecast_time"])
             print_log(f"mlflow.log_param('Threshold value', {dtm_tr['threshold_value']})")
             mlflow.log_param("Threshold value", dtm_tr["threshold_value"])
-            print_log(f"mlflow.log_param('AREA list', {dtm_tr['dataset'][0]['AREA_list']})")
-            mlflow.log_param("AREA list", dtm_tr["dataset"][0]["AREA_list"])
-            print_log(f"mlflow.log_param('Train dataset', {dtm_tr['train']['seasons']})")
-            mlflow.log_param("Train dataset", dtm_tr["train"]["seasons"])
-            print_log(f"mlflow.log_param('Test dataset', {dtm_tr['test']['seasons']})")
-            mlflow.log_param("Test dataset", dtm_tr["test"]["seasons"])
-            print_log(f"mlflow.log_param('Validation dataset', {dtm_tr['validate']['seasons']})")
-            mlflow.log_param("Validation dataset", dtm_tr["validate"]["seasons"])
+            print_log(f"mlflow.log_param('AREA input list', {dtm_tr['dataset'][0]['AREA_list']})")
+            mlflow.log_param("AREA input list", dtm_tr["dataset"][0]["AREA_list"])
+            print_log(f"mlflow.log_param('Train input dataset', {dtm_tr['train']['seasons']})")
+            mlflow.log_param("Train input dataset", dtm_tr["train"]["seasons"])
+            print_log(f"mlflow.log_param('Test input dataset', {dtm_tr['test']['seasons']})")
+            mlflow.log_param("Test input dataset", dtm_tr["test"]["seasons"])
+            print_log(f"mlflow.log_param('Validation input dataset', {dtm_tr['validate']['seasons']})")
+            mlflow.log_param("Validation input dataset", dtm_tr["validate"]["seasons"])
+
+            print_log(f"mlflow.log_param('AREA output list', {dtm_tr['dataset'][0]['AREA_list']})")
+            mlflow.log_param("AREA output list", dtm_tr["dataset"][0]["AREA_list"])
+            print_log(f"mlflow.log_param('Train output dataset', {dtm_tr['train']['seasons']})")
+            mlflow.log_param("Train output dataset", dtm_tr["train"]["seasons"])
+            print_log(f"mlflow.log_param('Test output dataset', {dtm_tr['test']['seasons']})")
+            mlflow.log_param("Test output dataset", dtm_tr["test"]["seasons"])
+            print_log(f"mlflow.log_param('Validation output dataset', {dtm_tr['validate']['seasons']})")
+            mlflow.log_param("Validation output dataset", dtm_tr["validate"]["seasons"])
+
             for val1 in nnw_tr["model_parameters"]:
                 if isinstance(nnw_tr["model_parameters"][val1], list):
                     i = 0

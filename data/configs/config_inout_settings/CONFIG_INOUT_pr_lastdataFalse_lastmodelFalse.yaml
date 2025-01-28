@@ -4,7 +4,7 @@ path_out: /opt/pyims/eosc/vystup
 output_name: test_20240809
 use_last_data: False
 use_last_model: False
-model_hdf5: ''  # model.h5
+model_hdf5: '/opt/pyims/eosc/vystup/test_20241010_20250113_151117/model.h5' # ''  # model.h5
 targz_data_path: ''  # empty is default
 train_outfilename: train_out.csv
 test_outfilename: test_out.csv
